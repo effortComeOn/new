@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: '微软雅黑', '宋体', sans-serif;
+  color: #231f20;
+  overflow: auto;
+  background: url(bg.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+a {
+  color: #000;
+  font-size: 14px;
+}
+#main {
+  width: 100%;
+}
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+  margin-top: 10px;
+}
+#text {
+  width: 400px;
+  height: 425px;
+  left: 60px;
+  top: 80px;
+  position: absolute;
+}
+#code {
+  display: none;
+  font-size: 16px;
+}
+#clock-box {
+  position: absolute;
+  left: 60px;
+  top: 550px;
+  font-size: 28px;
+  display: none;
+}
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+#clock {
+  margin-left: 48px;
+  display: none;
+}
+#clock .digit {
+  font-size: 64px;
+}
+#canvas {
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+}
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+.hand {
+  cursor: pointer;
+}
+.say {
+  margin-left: 5px;
+}
+.space {
+  margin-right: 150px;
+}
+.audio {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+#lovexf {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 88%;
+  opacity: 0;
+  z-index: -1;
+}
+.lovexf-div {
+  position: absolute;
+  right: 0;
+  width: 55%;
+  height: 88%;
+  opacity: 0;
+  z-index: -1;
+}
+.lovexf {
+  animation: love-xf-init 1.2s;
+}
+
+@keyframes love-xf-init {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.love_you {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: 35%;
+  right: 140px;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffc0cb;
+  letter-spacing: 0.05rem;
+  user-select: none;
+  -webkit-text-shadow: 0 0 8px #fff;
+  text-shadow: 0 0 8px #fff;
+}
+.love_you_ani {
+  -moz-animation: love-xf 1.2s alternate ease-in-out;
+  -webkit-animation: love-xf 1.2s alternate ease-in-out;
+  animation: love-xf 1.2s alternate ease-in-out;
+}
+@keyframes love-xf {
+  0% {
+    opacity: 0.08;
+    filter: blur(8px);
+    letter-spacing: 0.1rem;
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    letter-spacing: 0.05rem;
+  }
+}
+
+/* 爱心缩放 */
+@media screen and (max-width: 450px) {
+  #lovexf {
+    /* .5 指的是在画布原始大小上缩放一半 */
+    zoom: 0.5;
+    /* .3 就是缩放 3/10 */
+    /* zoom: .3; */
+    /* 大家自己尝试 */
+  }
+}
