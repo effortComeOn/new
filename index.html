@@ -30,14 +30,13 @@
                     <span class="say">人间有趣，因为有你；</span><br>
                     <span class="say">历遍山河，人间值得；</span><br>
                     <span class="say">承蒙相遇，何其有幸！</span><br>
-                    <span class="say"> </span><br>
-                    <span class="say"><span class="space"></span>—WYH</span>
+                    <span class="say" style="margin-top: 10px"><span class="space"></span>—WYH</span>
                 </div>
             </div>
             <div id="clock-box">
                 现在是我<span class="STYLE1">和</span>你<span class="STYLE1">相识的</span>
                 <div id="clock"></div>
-                <span class="say care"><span class="space"></span>--Care</span>
+                <span class="space2">--Care</span>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
             <canvas id="lovexf"></canvas>
@@ -149,6 +148,7 @@
                 lovexf.css({ 'z-index': 520, opacity: 1 });
                 $('.love_you').addClass('love_you_ani');
                 $('.love_you').css({ 'z-index': 521, opacity: 1 });
+                $('#text').css({ 'z-index': 1 });
             }));
 
             // var flowAnimate = eval(Jscex.compile("async", function () {
