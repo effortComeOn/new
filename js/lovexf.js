@@ -212,7 +212,8 @@ var ParticlePool = (function () {
     context.closePath();
     // create the fill
     // context.fillStyle = '#c88ffe';
-    context.fillStyle = '#ffc0cb';
+    // context.fillStyle = '#ffc0cb';
+    context.fillStyle = '#ff0000';
     context.fill();
     // create the image
     var image = new Image();
