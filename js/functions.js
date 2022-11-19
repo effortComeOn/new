@@ -28,7 +28,7 @@ $(window).resize(function() {
 					progress++;
 				}
 				$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
-				if (progress >= str.length) {
+				if (progress - 1 >= str.length) {
 					clearInterval(timer);
 				}
 			}, 75);
