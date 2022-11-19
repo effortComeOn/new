@@ -147,6 +147,11 @@ a {
 }
 
 /* 爱心缩放 */
+@media screen and (max-width: 1080px) {
+  #lovexf {
+    zoom: 0.7;
+  }
+}
 @media screen and (max-width: 450px) {
   #lovexf {
     width: 600px;
