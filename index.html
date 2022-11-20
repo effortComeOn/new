@@ -30,16 +30,19 @@
                     <span class="say">人间有趣，因为有你；</span><br>
                     <span class="say">历遍山河，人间值得；</span><br>
                     <span class="say">承蒙相遇，何其有幸！</span><br>
-                    <span class="say" style="margin-top: 10px"><span class="space"></span>—WYH</span>
+                    <span class="say"><span class="space"></span>— WYH</span>
                 </div>
             </div>
             <div id="clock-box">
                 现在是我<span class="STYLE1">和</span>你<span class="STYLE1">相识的</span>
                 <div id="clock"></div>
-                <span class="space2">--Care</span>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
-            <canvas id="lovexf"></canvas>
+            <canvas id="lovexf">
+            </canvas>
+            <div class="lovexf-name">
+                <span class="love_you">王宇航</span>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
@@ -148,6 +151,7 @@
                 lovexf.css({ 'z-index': 520, opacity: 1 });
                 $('.love_you').addClass('love_you_ani');
                 $('.love_you').css({ 'z-index': 521, opacity: 1 });
+                $('.lovexf-name').css({ 'z-index': 521, opacity: 1 });
                 $('#text').css({ 'z-index': 1 });
             }));
 
@@ -185,7 +189,7 @@
 
             var textAnimate = eval(Jscex.compile("async", function () {
                 var together = new Date();
-                together.setFullYear(2016, 12, 13); 			//时间年月日
+                together.setFullYear(2022, 8, 25); 			//时间年月日
                 together.setHours(11);						//小时	
                 together.setMinutes(0);					//分钟
                 together.setSeconds(0);					//秒前一位
